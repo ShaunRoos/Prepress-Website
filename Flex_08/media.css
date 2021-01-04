@@ -1,0 +1,125 @@
+@media (max-width: 940px) {
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero h2 {
+        font-size: 6rem;
+    }
+
+    .hero h3 {
+        font-size: 5rem;
+    }
+    .logo{
+    margin-bottom:40px;
+    margin-left:40px;
+    width: 150px;
+    
+}
+    select,
+    input {
+        font-size: 17px;
+        width: 200px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-left: 3px;
+        border-radius: 10px;
+    }
+
+    .label-box {
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    .btn {
+        font-size: 17px;
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    .hero h2 {
+        font-size: 4rem;
+        font-weight: 200;
+    }
+
+    .hero h3 {
+        font-size: 30px;
+    }
+
+    .hero h4 {
+        font-size: 14px;
+    }
+
+    .logo {
+        
+        width: 130px;
+    }
+}
+
+    @media (max-width: 500px) {
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero h4 {
+            font-size: 13px;
+            margin-bottom: auto;
+        }
+
+        .container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        select,
+        input {
+            font-size: 14px;
+            width: 170px;
+            height: 27px;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding-left: 3px;
+            border-radius: 5px;
+        }
+
+        .label-box {
+            width: 170px;
+            height: 40px;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 0;
+        }
+
+        .btn {
+            font-size: 14px;
+            width: 170px;
+            height: 27px;
+        }
+        .logo {
+            margin-bottom: 40px;
+            margin-left: 40px;
+            width: 80px;
+        }
+
+    }

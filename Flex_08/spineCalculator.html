@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Litho Printing School</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="flex.css">    
+    <link rel="stylesheet" href="media.css">    
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation_button">
+            <span class="navigation_icon">&nbsp;</span>
+        </label>
+        <div class="navigation_background">&nbsp;</div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="index.html" class="navigation_link">Home</a></li>
+                <li class="navigation_item"><a href="spineCalculator.html" class="navigation_link">Spine Calculator</a></li>
+                <li class="navigation_item"><a href="paperSizes.html" class="navigation_link">Paper Sizes</a></li>
+                <li class="navigation_item"><a href="shingelator.html" class="navigation_link">Shingelator</a></li>
+                <li class="navigation_item"><a href="foldTypes.html" class="navigation_link">Fold Types</a></li>
+                <li class="navigation_item"><a href="https://www.youtube.com/channel/UC6LifEA3037iX8E7CzCgUVA?view_as=subscriber" class="navigation_link" target="_blank">Tutorials</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="background-image" style="background-image: linear-gradient(to right, rgb(128,128,128, .7), rgb(112,128,144, .7)) ,url(img/Hero.jpeg);"></div>
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">S</span>
+                <span class="heading-primary-main">P</span>
+                <span class="heading-primary-main">I</span>
+                <span class="heading-primary-main">N</span>
+                <span class="heading-primary-main">E</span>
+            </h1>
+            <h3>CALCULATOR</h3>
+            <div class="container">
+                <select id="bindType" onchange="bindingChange(event)">
+                    <option value=0>Saddle Stitch</option>
+                    <option value=1>Perfect Bind</option>
+                    <option value=2.5>Sew Soft Cover</option>
+                    <option value=3.8>Sew Case Bound 1200</option>
+                    <option value=5>Sew Case Bound 1800</option>
+                    <option value=6>Sew Case Bound 2300</option>
+                </select>
+                <input type="number" id="num1" name="num1" value="0">
+            </div>
+
+            <div class="container">
+                <select id="caliper" onchange="caliperChange(event)">
+                    <option value=0.061>Bond 060</option>
+                    <option value=0.05475>Matt 060</option>
+                    <option value=0.04875>Gloss 060</option>
+                    <option value=0.081>Bond 070</option>
+                    <option value=0.0638>Matt 070</option>
+                    <option value=0.0568>Gloss 070</option>
+                    <option value=0.0920>Kami Bond 080</option>
+                    <option value=0.1>Bond 080</option>
+                    <option value=0.073>Matt 080</option>
+                    <option value=0.065>Gloss 080</option>
+                    <option value=0.1062>Bond 085</option>
+                    <option value=0.073>Matt 085</option>
+                    <option value=0.067>Gloss 085</option>
+                    <option value=0.11>Bond 090</option>
+                    <option value=0.078>Matt 090</option>
+                    <option value=0.072>Gloss 090</option>
+                    <option value=0.11875>Bond 095</option>
+                    <option value=0.089>Matt 095</option>
+                    <option value=0.078>Gloss 095</option>
+                    <option value=0.12>Bond 100</option>
+                    <option value=0.09>Matt 100</option>
+                    <option value=0.08>Gloss 100</option>
+                    <option value=0.1312>Bond 105</option>
+                    <option value=0.093>Matt 105</option>
+                    <option value=0.085>Gloss 105</option>
+                    <option value=0.1412>Bond 113</option>
+                    <option value=0.099>Matt 113</option>
+                    <option value=0.0925>Gloss 113</option>
+                    <option value=0.143>Bond 115</option>
+                    <option value=0.1049>Matt 115</option>
+                    <option value=0.093>Gloss 115</option>
+                    <option value=0.145>Bond 120</option>
+                    <option value=0.1095>Matt 120</option>
+                    <option value=0.0975>Gloss 120</option>
+                    <option value=0.16>Bond 128</option>
+                    <option value=0.12>Matt 128</option>
+                    <option value=0.1050>Gloss 128</option>
+                    <option value=0.1687>Bond 135</option>
+                    <option value=0.121>Matt 135</option>
+                    <option value=0.1051>Gloss 135</option>
+                    <option value=0.1687>Bond 140</option>
+                    <option value=0.132>Matt 140</option>
+                    <option value=0.115>Gloss 140</option>
+                    <option value=0.175>Bond 148</option>
+                    <option value=0.1321>Matt 148</option>
+                    <option value=0.1151>Gloss 148</option>
+                    <option value=0.1875>Bond 157</option>
+                    <option value=0.1322>Matt 157</option>
+                    <option value=0.118>Gloss 157</option>
+                    <option value=0.1962>Bond 170</option>
+                    <option value=0.16>Matt 170</option>
+                    <option value=0.135>Gloss 170</option>
+                    <option value=0.2125>Bond 180</option>
+                    <option value=0.17>Matt 180</option>
+                    <option value=0.14>Gloss 180</option>
+                    <option value=0.213>Bond 200</option>
+                    <option value=0.175>Matt 200</option>
+                    <option value=0.144>Gloss 200</option>
+                    <option value=0.25>Bond 210</option>
+                    <option value=0.19>Matt 210</option>
+                    <option value=0.17>Gloss 210</option>
+                    <option value=0.3125>Bond 250</option>
+                    <option value=0.2281>Matt 250</option>
+                    <option value=0.2031>Gloss 250</option>
+                    <option value=0.375>Bond 300</option>
+                    <option value=0.2737>Matt 300</option>
+                    <option value=0.2437>Gloss 300</option>
+                    <option value=0.4375>Bond 350</option>
+                    <option value=0.3193>Matt 350</option>
+                    <option value=0.2847>Gloss 350</option>
+                </select>
+                <input type="number" id="num2" name="num2" value="0.061">
+            </div>
+            <div class="container">
+                <div class="label-box">
+                    <h4 id="label">Number of Pages:</h4>
+                </div>
+                <input type="number" id="num3" name="num3" value="10">
+            </div>
+            <div class="container">
+                <button class="btn" onclick="myFunction()">Calculate</button>
+            </div>
+            <h3 id="answer">The Answer is : </h3>
+
+        </section>
+        <footer>
+            <p>Jester Multimedia</p>
+            <p></p>
+            <ul>
+                <li><a href="https://www.facebook.com/Jester-Printing-School-101101348044591/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC6LifEA3037iX8E7CzCgUVA?view_as=subscriber" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/groups/13792685/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="Script.js"></script>
+</body>
+</html>
